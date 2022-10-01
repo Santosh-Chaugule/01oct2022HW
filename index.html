@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+    
+      
+      
+    .oval {
+      width: 200px;
+      height: 100px;
+      border: 1px solid black;
+      border-radius: 100px / 50px;
+    }
+    .oval:hover{
+     transform: scale(1.1);
+    }
+
+      
+      .wrapper {
+        display: flex;
+      }
+
+      .box {
+        width: 150px;
+        height: 150px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+      }
+      .box1 {
+        width: 150px;
+        height: 150px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+      }
+      .box2 {
+        width: 150px;
+        height: 150px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+      }
+      .box1:hover{
+        background-color: black;
+        color: gold;
+      }
+      .box:hover{
+        transform: scale(1.1);
+        color: aliceblue;
+      }
+      .box2:hover{
+        color: blue;
+
+      }
+
+
+      .blue{
+        background: blue;
+        text-align: center;
+        line-height: 200px;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 200px;
+      }
+
+      .purple {
+        background: #ab3fdd;
+        text-align: center;
+        line-height: 200px;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 200px;
+      }
+
+      .wine {
+        background: #ae163e;
+        text-align: center;
+        line-height: 200px;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 200px;
+      }
+      .tomato {
+        background: tomato;
+        text-align: center;
+        line-height: 200px;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 200px;
+      }
+      .orange {
+        background: orange;
+        text-align: center;
+        line-height: 200px;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 200px;
+      }
+      .DodgerBlue {
+        background: dodgerblue;
+        text-align: center;
+        line-height: 200px;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 200px;
+      }
+      .green {
+        background: green;
+        text-align: center;
+        line-height: 200px;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 200px;
+      }
+
+      .SlateBlue {
+        background: slateblue;
+        text-align: center;
+        line-height: 200px;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 200px;
+      }
+      .MediumSeaGreen {
+        background: mediumseagreen;
+        text-align: center;
+        line-height: 200px;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 30%;
+      }
+      .Gray {
+        background: gray;
+        text-align: center;
+        line-height: 200px;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 30%;
+      }
+      .Violet {
+        background: violet;
+        text-align: center;
+        line-height: 200px;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 30%;
+      }
+      .chocolate {
+        background: chocolate;
+        text-align: center;
+        line-height: 200px;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 30%;
+      }
+      .crimson {
+        background: crimson;
+        text-align: center;
+        line-height: 200px;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 30%;
+      }
+      .darkgoldenrod {
+        background: darkgoldenrod;
+        text-align: center;
+        line-height: 200px;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 30%;
+      }
+      .DarkTurquoise {
+        background: darkturquoise;
+        text-align: center;
+        line-height: 200px;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 30%;
+      }
+      .Chartreuse {
+        background: chartreuse;
+        text-align: center;
+        line-height: 200px;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 30%;
+      }
+      .lemonchiffon {
+        background: lemonchiffon;
+        text-align: center;
+        line-height: 200px;
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      .magenta {
+        background: magenta;
+        text-align: center;
+        line-height: 200px;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .lightblue {
+        background: lightblue;
+        text-align: center;
+        line-height: 200px;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .lightgreen {
+        background: lightgreen;
+        text-align: center;
+        line-height: 200px;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .lightslategrey {
+        background: lightgray;
+        text-align: center;
+        line-height: 200px;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .lime {
+        background: lime;
+        text-align: center;
+        line-height: 200px;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .DeepPink {
+        background: deeppink;
+        text-align: center;
+        line-height: 200px;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .Fuchsia {
+        background: fuchsia;
+        text-align: center;
+        line-height: 200px;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .Khaki{
+        background-color: khaki;
+        text-align: center;
+        line-height: 100px;
+        font-weight: bold;
+      }
+      .PaleGreen{
+        background-color: palegreen;
+        text-align: center;
+        line-height: 100px;
+        font-weight:bold ;
+
+      }
+      .Peru{
+        background-color: peru;
+        text-align: center;
+        line-height: 100px;
+        font-weight: bold;
+
+      }
+      .Olive{
+        background-color: olive;
+        text-align: center;
+        line-height: 100px;
+        font-weight: bold;
+
+      }
+      .Orchid{
+
+        background-color: orchid;
+        text-align: center;
+        line-height: 100px;
+        font-weight: bold;
+
+
+      }
+      .SaddleBrown{
+        background-color: saddlebrown;
+        text-align: center;
+        line-height: 100px;
+        font-weight: bold;
+        
+      }
+
+      
+    </style>
+  </head>
+  <body>
+
+    <div class="wrapper">
+      <div class="box1 blue">Blue</div>
+      <div class="box1 purple">Purple</div>
+      <div class="box1 wine">Wine</div>
+      <div class="box1 tomato">Tomato</div>
+      <div class="box1 orange">Orange</div>
+      <div class="box1 DodgerBlue">DodgerBlue</div>
+      <div class="box1 green">Green</div>
+      <div class="box1 SlateBlue">SlateBlue</div>
+    </div>
+    <div class="wrapper">
+      <div class="box MediumSeaGreen">MediumSeaGreen</div>
+      <div class="box Gray">Gray</div>
+      <div class="box Violet">Violet</div>
+      <div class="box chocolate">chocolate</div>
+      <div class="box crimson">crimson</div>
+      <div class="box darkgoldenrod">darkgoldenrod</div>
+      <div class="box Chartreuse">Chartreuse</div>
+      <div class="box DarkTurquoise">DarkTurquoise</div>
+    </div>
+    <div  class="wrapper">
+      <div class="box2 lemonchiffon">lemonchiffon</div>
+      <div class="box2 magenta">magenta</div>
+      <div class="box2 lightblue">lightblue</div>
+      <div class="box2 lightgreen">lightgreen</div>
+      <div class="box2 lightslategrey">lightslategrey</div>
+      <div class="box2 lime">lime</div>
+      <div class="box2 DeepPink">DeepPink</div>
+      <div class="box2 Fuchsia">Fuchsia</div>
+    </div>
+
+    <div class="wrapper">
+      <div class="oval  Khaki">Khaki</div>
+      <div class="oval PaleGreen">PaleGreen</div>
+      <div class="oval  Peru">Peru</div>
+      <div class="oval  Olive">Olive</div>
+      <div class="oval Orchid">Orchid</div>
+      <div class="oval  SaddleBrown">SaddleBrown</div>
+      
+  
+    </div>
+
+     
+    </div>
+  </body>
+</html>
